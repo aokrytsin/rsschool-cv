@@ -1,5 +1,4 @@
 # Artyom Kritsyn
-![Photo](https://sun9-82.userapi.com/impg/h-DEc61X51paXsYAx91egNDj1FNgzMfWnNoC_g/JGLcmY10p8U.jpg?size=961x1280&quality=95&sign=77112392c09b81cf62befe896fc69ee6&type=album)
 ## Contacts:
 * **Location:** Ekaterinburg, Russia
 * **Phone:** +7(912)259-3195
@@ -31,5 +30,5 @@ function multiply(a, b) {
     + [Code-Basics](https://ru.code-basics.com/)
     + [RS School](https://rs.school/) - in progress
 ## Languages:
-* English - is in the range of B1 INTERMEDIATE to B2 UPPER INTERMEDIATE (according to the online test at [EFset](www.efset.org))
+* English - is in the range of B1 INTERMEDIATE to B2 UPPER INTERMEDIATE - according to the online test at [EFset](https://www.efset.org/)
 * Russian - Native
