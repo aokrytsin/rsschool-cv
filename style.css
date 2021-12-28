@@ -11,12 +11,27 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-family: "Roboto", sans-serif;
+    background-color: #EDEEED;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #EDEEED;
 }
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
-  }
+}
 
 .main-container {
     display: flex;
@@ -34,13 +49,22 @@ body {
 }
 
 .header {
-    border: 1px solid blue;
+    background-color: #1C74BB;;
+    min-height: 60px;
 }
 
 .main {
     border: 1px solid blue;
+    min-height: 60px
 }
 
 .footer {
     border: 1px solid blue;
+    min-height: 60px
+}
+
+img.profile-photo {
+width: 200px;
+height: 200px;
+border-radius: 50%;
 }
