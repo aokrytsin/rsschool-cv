@@ -2,11 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/ico" sizes="32x32" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV Artyom Kritsyn</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container header-container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code Example</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main-container">
+                <section class="section section-profile" id="profile">
+                    <div class="profile-photo"><img src="assets/img/photo.png" class="photo" alt="my-photo"/></div>
+                    <div class="section-profile-name">
+                    <h1 class="section-title">Artyom Kritsyn</h1>
+                    <h3 class="section-subtitle">Junior Frontend Developer</h3>
+                    </div>
+                </section>
+                <section class="section" id="about">
+                    <h2 class="section-title">About Me</h2>
+                    <p>My goal is to change my usual place of work. My priority is to enjoy my work, solve interesting problems, and rack my brain.
+                        I strive to accumulate knowledge and learn something new every day. My strengths are self-study, assiduity and friendly nature.
+                        Previously was engaged in creation of collages and design. I have some knowledge in different areas of life, life experience.</p>
+                </section>
+                <section class="section" id="contacts">
+                    <h2 class="section-title">Contacts</h2>
+                    <ul class="section-list-contacts">
+                        <li class="section-item contacts-list">Location: Ekaterinburg, Russia</li>
+                        <li class="section-item contacts-list">Phone: +7(912)259-3195</li>
+                        <li class="section-item contacts-list">Email:<a href="mailto:aokrytsin@gmail.com"> aokrytsin@gmail.com</a></li>
+                        <li class="section-item contacts-list">GitHub: <a href="https://github.com/aokrytsin">aokrytsin</a></li>
+                        <li class="section-item contacts-list">Discord: aokrytsin#3683</li>
+                    </ul>
+                </section>
+                <section class="section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="section-list">
+                        <li class="section-item">HTML/CSS (Basics)</li>
+                        <li class="section-item">JavaScript (Basics)</li>
+                        <li class="section-item">VS Code</li>
+                        <li class="section-item">Git/GitHub</li>
+                        <li class="section-item">Adobe Photoshop, Illustrator, little bit After Effects</li>
+                    </ul>
+                </section>
+                <section class="section" id="code">
+                    <h2 class="section-title">Code Example</h2>
+                    <code>function multiply(a, b) {<br>
+                        return a * b
+                    }</code>
+                </section>
+                <section class="section" id="experience">
+                    <h2 class="section-title">Experience</h2>
+                    <p>Junior Frontend Developer</p>
+                    <p>CV Markdown & Git - <a href="https://github.com/aokrytsin/rsschool-cv/blob/gh-pages/cv.md">CV Link</a></p>
+                </section>
+                <section class="section" id="education">
+                    <h2 class="section-title">Education</h2>
+                    <ul class="section-list-edu">
+                    <li class="section-item">University: Nizhny Tagil technological Institute (branch) Ural Federal University, Economy</li>
+                    <li class="section-item">Courses:</li>   
+                    <ul class="section-list section-list-edu">
+                        <li class="section-item"><a href="https://www.htmlacademy.ru/">HTML Academy</a></li>
+                        <li class="section-item"><a href="https://www.freecodecamp.org/">FreeCodeCamp - in progress</a></li>
+                        <li class="section-item"><a href="https://ru.code-basics.com/">Code-Basics</a></li>
+                        <li class="section-item"><a href="https://rs.school/">RS School - in progress</a></li>
+                    </ul>
+                    </ul>
+                </section>
+                <section class="section" id="languages">
+                    <h2 class="section-title">Languages</h2>
+                    <ul class="section-list-lang">
+                        <li class="section-item">English - is in the range of B1 INTERMEDIATE to B2 UPPER INTERMEDIATE - according to the online test at <a href="https://www.efset.org/">EFset</a></li>
+                        <li class="section-item">Russian - Native</li>
+                    </ul>
+                </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div>
+            &copy; 2022 <a href="https://github.com/aokrytsin">aokrytsin</a>
+            </div>
+            <a href="https://rs.school/js-stage0/" class="rs-school-logo"></a>
+        </div>
+    </footer>
+    <script src="/index.js"></script>
 </body>
 </html>
