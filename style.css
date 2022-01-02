@@ -44,15 +44,32 @@ body {
 }
 
 .nav-link {
+    position: relative;
     padding: 0 10px;
     line-height: 50px;
     color: #CDDEFF;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.nav-link:hover {
-    color: #FF5959;
-    text-decoration: underline;
+.nav-link::after{
+    content: "";
+    position: absolute;
+    background-color: #FF5959;
+    bottom: -10px;
+    left: 0px;
+    height: 3px;
+    opacity: 0%;
+    width: 0%;
+    -webkit-transition: width .5s ease-in-out;
+    -moz--transition: width .5s ease-in-out;
+    transition: width .5s ease-in-out;
+}
+
+.nav-link:hover:after,
+.nav-link:focus:after {
+    width: 100%;
+    opacity: 100%;
 }
 
 .main-container {
@@ -134,4 +151,37 @@ body {
     background-image: url(./assets/svg/rss.svg);
     background-size: contain;
     filter: invert(1);
+}
+
+.section-list-contacts {
+    list-style: none;
+}
+
+.section-list-edu {
+    list-style: none;
+}
+
+.section-list-lang {
+    list-style: none;
+}
+
+.section-item {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+
+.contacts-list:before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #676FA3;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+#languages.section {
+    align-self: center;
 }
