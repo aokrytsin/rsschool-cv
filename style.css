@@ -3,15 +3,37 @@
 }
 
 html {
-    scroll-behavior: smooth;
-}
-
+    scroll-behavior: smooth; 
+} 
+ 
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: "Roboto", sans-serif;
-    background-color: #EDEEED;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; 
+    color: #676FA3;
+    background-color: #CDDEFF;
+   
+}
+
+.header {
+    background-color: #676FA3;
+}
+
+.main {
+    background-color: #EEF2FF;
+}
+
+.footer {
+    background-color: #676FA3;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .nav-list {
@@ -22,15 +44,15 @@ body {
 }
 
 .nav-link {
-    padding: 0 20px;
+    padding: 0 10px;
     line-height: 50px;
+    color: #CDDEFF;
     text-decoration: none;
-    color: #EDEEED;
 }
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
+.nav-link:hover {
+    color: #FF5959;
+    text-decoration: underline;
 }
 
 .main-container {
@@ -38,8 +60,27 @@ body {
     flex-wrap: wrap;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #CDDEFF;
+}
+
+.footer-container a{
+    color: #CDDEFF;
+    text-decoration: none;
+}
+
+.footer-container a:hover{
+    color: #FF5959;
+    text-decoration: underline;
+}
+
 .section {
     width: 50%;
+    padding: 20px;
 }
 
 @media (max-width: 768px) {
@@ -48,23 +89,49 @@ body {
     }
 }
 
-.header {
-    background-color: #1C74BB;;
-    min-height: 60px;
+.section-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.main {
-    border: 1px solid blue;
-    min-height: 60px
+.section-profile-name {
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.footer {
-    border: 1px solid blue;
-    min-height: 60px
+.section-profile-name h1{
+    font-weight: 700;
+    padding: 10px;
+    border-bottom: 5px solid #FF5959;
 }
 
-img.profile-photo {
-width: 200px;
-height: 200px;
-border-radius: 50%;
+.section-profile-name h3 {
+    font-weight: 400;
+    font-size: medium; 
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 8px solid #FF5959;
+  }
+
+.photo {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.rs-school-logo {
+    width: 121px;
+    height: 45px;
+    background-image: url(./assets/svg/rss.svg);
+    background-size: contain;
+    filter: invert(1);
 }
