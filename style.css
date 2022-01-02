@@ -5,7 +5,17 @@
 html {
     scroll-behavior: smooth; 
 } 
- 
+
+.section a{
+    text-decoration: none;
+    color: #FF5959;
+}
+
+.section a:hover {
+    color: #676FA3;
+    transition: .6s ease-in-out;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -88,16 +98,19 @@ body {
 .footer-container a{
     color: #CDDEFF;
     text-decoration: none;
+    opacity: 100%;
 }
 
 .footer-container a:hover{
     color: #FF5959;
-    text-decoration: underline;
+    transition: .5s ease-in-out;
+    opacity: 100%;
 }
 
 .section {
     width: 50%;
     padding: 20px;
+    background-color: #CDDEFF;
 }
 
 @media (max-width: 768px) {
@@ -112,6 +125,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    background-color: #EEF2FF;
 }
 
 .section-profile-name {
@@ -180,8 +194,4 @@ body {
     border: 2px solid #676FA3;
     border-radius: 50%;
     margin-top: 2px;
-}
-
-#languages.section {
-    align-self: center;
 }
