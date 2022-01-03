@@ -111,7 +111,6 @@ body {
     width: 50%;
     padding: 20px;
     background-color: #EEF2FF;
-    border-bottom: 5px solid #CDDEFF;
 }
 
 @media (max-width: 768px) {
@@ -127,7 +126,6 @@ body {
     flex-wrap: wrap;
     width: 100%;
     background-color: #EEF2FF;
-    border-bottom: 5px solid #CDDEFF;
 }
 
 .section-profile-name {
@@ -200,6 +198,17 @@ body {
     margin-top: 2px;
 }
 
+.education-list-main:before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #676FA3;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
 #languages {
     width: 100%;
     margin: 0 auto;
@@ -208,4 +217,13 @@ body {
 
 .section-title-lang {
     text-align: center;
+}
+
+#about, #code, #experience {
+    background-color: #CDDEFF;
+    color: #676FA3;
+}
+
+#education, #experience {
+    border-bottom: 0px;
 }
