@@ -231,7 +231,7 @@ body {
     background-repeat: no-repeat;
 }
 .contacts-list:nth-child(3) {
-    background-image: url(/assets/svg/at.svg);
+    background-image: url(./assets/svg/at.svg);
     background-repeat: no-repeat;
 }
 .contacts-list:nth-child(4) {
