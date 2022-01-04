@@ -187,7 +187,7 @@ body {
     padding-left: 30px;
 }
 
-.contacts-list:before {
+.skills-list::before{
     content: "";
     position: absolute;
     left: 5px;
@@ -196,6 +196,50 @@ body {
     border: 2px solid #676FA3;
     border-radius: 50%;
     margin-top: 2px;
+}
+
+.edu-list::before{
+    content: "";
+    position: absolute;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #676FA3;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+.contacts-list:before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    margin-top: 2px;
+    background-size: contain;
+}
+
+.contacts-list:nth-child(1) {
+    background-image: url(/assets/svg/compass.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.contacts-list:nth-child(2) {
+    background-image: url(/assets/svg/phone.svg);
+    background-repeat: no-repeat;
+}
+.contacts-list:nth-child(3) {
+    background-image: url(/assets/svg/at.svg);
+    background-repeat: no-repeat;
+}
+.contacts-list:nth-child(4) {
+    background-image: url(/assets/svg/github.svg);
+    background-repeat: no-repeat;
+}
+.contacts-list:nth-child(5) {
+    background-image: url(/assets/svg/discord.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
 }
 
 .education-list-main:before {
