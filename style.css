@@ -222,12 +222,12 @@ body {
 }
 
 .contacts-list:nth-child(1) {
-    background-image: url(/assets/svg/compass.svg);
+    background-image: url(./assets/svg/compass.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
 .contacts-list:nth-child(2) {
-    background-image: url(/assets/svg/phone.svg);
+    background-image: url(./assets/svg/phone.svg);
     background-repeat: no-repeat;
 }
 .contacts-list:nth-child(3) {
@@ -235,11 +235,11 @@ body {
     background-repeat: no-repeat;
 }
 .contacts-list:nth-child(4) {
-    background-image: url(/assets/svg/github.svg);
+    background-image: url(./assets/svg/github.svg);
     background-repeat: no-repeat;
 }
 .contacts-list:nth-child(5) {
-    background-image: url(/assets/svg/discord.svg);
+    background-image: url(./assets/svg/discord.svg);
     background-repeat: no-repeat;
     background-size: 20px;
 }
