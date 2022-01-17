@@ -427,15 +427,6 @@ h1 {
     line-height: 40px;
     color: #BDAE82;
 }
-::placeholder {
-    padding: 5px 0px 5px 20px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 38px;
-    color: #BDAE82;
-}
 .contacts-textarea {
     resize: none;
     height: 100px;
@@ -448,6 +439,33 @@ h1 {
     font-weight: normal;
     font-size: 20px;
     line-height: 40px;
+    color: #BDAE82;
+}
+.contacts-tel::placeholder {
+    padding: 5px 0px 5px 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    color: #BDAE82;
+}
+.contacts-email::placeholder {
+    padding: 5px 0px 5px 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    color: #BDAE82;
+}
+.contacts-textarea::placeholder {
+    padding: 5px 0px 5px 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
     color: #BDAE82;
 }
 .contacts-btn {
