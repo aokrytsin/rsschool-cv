@@ -83,7 +83,8 @@ body {
     text-align: center;
     color: #fff;
 }
-.main-container {
+.switch-lang-item:hover {
+    color:#bdae82;
 }
 
 .hero-container {
