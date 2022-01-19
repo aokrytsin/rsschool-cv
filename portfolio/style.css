@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
-    scroll-behavior: smooth; 
-  }
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0 auto;
@@ -16,7 +20,7 @@ body {
     background-position: center 0;
 }
 .container {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -28,7 +32,6 @@ body {
 .logo {
     width: 50px;
     height: 50px;
-    padding: 20px;
     transition: 0.3s;
 }
 .logo:hover {
@@ -63,17 +66,17 @@ body {
     color: #BDAE82;
 }
 .switch-lang {
-    margin-right: 10px;
 }
 .switch-lang-list {
     display: flex;
+    justify-content: space-between;
     align-content: center;
     height: 50px;
-    padding-inline-start: 0%;
+    width: 70px;
+    padding-inline-start: 0;
     list-style: none;
 }
 .switch-lang-item {
-    padding-right: 9px;
     margin: 0;
     font-family: Inter;
     font-style: normal;
@@ -88,7 +91,6 @@ body {
     color:#bdae82;
 }
 .switch-lang-item-bracket {
-    padding-right: 9px;
     margin: 0;
     font-family: Inter;
     font-style: normal;
@@ -158,7 +160,6 @@ h1 {
     padding-top: 100px;
     display: block;
     width: 50%;
-    height: 80px;
     margin: 0 auto;
     overflow-x: hidden;
     background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
@@ -182,7 +183,6 @@ h1 {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 60px;
-    margin: 0 20px;
 }
 .skill-item {
     background-position: center top;
@@ -191,22 +191,22 @@ h1 {
 }
 .skill-item:nth-child(1){
     background-image: url('./assets/svg/camera.svg');
-    background-size: 62px 50px;
+    background-size: 66px 50px;
     background-repeat: no-repeat;
 }
 .skill-item:nth-child(2){
     background-image: url('./assets/svg/video.svg');
-    background-size: 62px 50px;
+    background-size: 66px 50px;
     background-repeat: no-repeat;
 }
 .skill-item:nth-child(3){
     background-image: url('./assets/svg/image.svg');
-    background-size: 62px 50px;
+    background-size: 66px 50px;
     background-repeat: no-repeat;
 }
 .skill-item:nth-child(4){
     background-image: url('./assets/svg/mic.svg');
-    background-size: 62px 50px;
+    background-size: 66px 50px;
     background-repeat: no-repeat;
 }
 .skill-item h3 {
@@ -264,13 +264,11 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 35px 20px 0 20px;
+    padding: 35px 0 0 0;
     height: 1145px;
 }
 .portfolio-img {
     padding-top: 25px;
-    width: 450px;
-    height: 560px;
 }
 
 .video-section {
@@ -301,15 +299,15 @@ h1 {
     height: 845px;
 }
 .price-box-list {
-    padding: 60px 20px 0 20px;
+    padding: 60px 0 0 0;
     display: flex;
     justify-content: space-between;
 }
 .price-box-item {
     display: block;
     border: 2px solid #BDAE82;
-    width: 445px;
-    height: 502px;
+    width: 450px;
+    height: 505px;
 }
 .price-box-item h3 {
     padding-top: 43px;
@@ -377,7 +375,7 @@ h1 {
     justify-content: flex-end;
     height: 700px;
 }
-.container .contacts-section {
+.contacts-section {
     background: url('./assets/img/contacts.jpg');
     background-size: auto 700px;
     background-position: center center;
@@ -385,15 +383,13 @@ h1 {
 .contacts-form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 60px 20px 0 0;
+    margin-top: 60px;
     width: 450px;
     height: 445px;
 }
 .contacts-title {
     margin: 0;
-    padding: 0 0 11px 0;
-    width: fit-content;
+    padding-bottom: 40px;
     font-family: Merriweather;
     font-style: normal;
     font-weight: 700;
@@ -403,6 +399,7 @@ h1 {
 }
 .contacts-tel {
     height: 50px;
+    margin-bottom: 20px;
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid #BDAE82;
     box-sizing: border-box;
@@ -414,8 +411,12 @@ h1 {
     line-height: 40px;
     color: #BDAE82;
 }
+.contacts-tel:active {
+    border-radius: 0px;
+}
 .contacts-email {
     height: 50px;
+    margin-bottom: 20px;
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid #BDAE82;
     box-sizing: border-box;
@@ -430,6 +431,7 @@ h1 {
 .contacts-textarea {
     resize: none;
     height: 100px;
+    margin-bottom: 30px;
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid #BDAE82;
     box-sizing: border-box;
@@ -441,31 +443,32 @@ h1 {
     line-height: 40px;
     color: #BDAE82;
 }
+
 .contacts-tel::placeholder {
-    padding: 5px 0px 5px 20px;
+    padding-left: 15px;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 38px;
+    line-height: 40px;
     color: #BDAE82;
 }
 .contacts-email::placeholder {
-    padding: 5px 0px 5px 20px;
+    padding-left: 15px;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 38px;
+    line-height: 40px;
     color: #BDAE82;
 }
 .contacts-textarea::placeholder {
-    padding: 5px 0px 5px 20px;
+    padding-left: 15px;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 38px;
+    line-height: 40px;
     color: #BDAE82;
 }
 .contacts-btn {
@@ -516,9 +519,10 @@ h1 {
 }
 .footer-right-column {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 50px;
+    width: 188px;
 }
 .footer-container a{
     text-decoration: none;
@@ -530,7 +534,6 @@ h1 {
 }
 .icon {
     align-self: center;
-    padding-right: 20px;
     width: 32px;
     height: 32px;
     fill: #fff;
