@@ -373,9 +373,9 @@ h1 {
 .contacts-section {
     display: flex;
     justify-content: flex-end;
+    max-width: 1440px;
     height: 700px;
-}
-.contacts-section {
+    margin: 0 auto;
     background: url('./assets/img/contacts.jpg');
     background-size: auto 700px;
     background-position: center center;
@@ -384,6 +384,7 @@ h1 {
     display: flex;
     flex-direction: column;
     margin-top: 60px;
+    margin-right: 20px;
     width: 450px;
     height: 445px;
 }
@@ -399,6 +400,7 @@ h1 {
 }
 .contacts-tel {
     height: 50px;
+    padding-left: 18px;
     margin-bottom: 20px;
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid #BDAE82;
@@ -411,11 +413,9 @@ h1 {
     line-height: 40px;
     color: #BDAE82;
 }
-.contacts-tel:active {
-    border-radius: 0px;
-}
 .contacts-email {
     height: 50px;
+    padding-left: 18px;
     margin-bottom: 20px;
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid #BDAE82;
@@ -431,6 +431,7 @@ h1 {
 .contacts-textarea {
     resize: none;
     height: 100px;
+    padding-left: 18px;
     margin-bottom: 30px;
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid #BDAE82;
@@ -445,7 +446,6 @@ h1 {
 }
 
 .contacts-tel::placeholder {
-    padding-left: 15px;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
@@ -454,7 +454,6 @@ h1 {
     color: #BDAE82;
 }
 .contacts-email::placeholder {
-    padding-left: 15px;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
@@ -463,7 +462,6 @@ h1 {
     color: #BDAE82;
 }
 .contacts-textarea::placeholder {
-    padding-left: 15px;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
