@@ -26,7 +26,6 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 
@@ -57,6 +56,31 @@ body {
     align-items: center;
     height: 50px;
     list-style: none;
+}
+
+.nav-list.is-active {
+    margin: 0;
+    padding: 134px 0 0 127px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 620px;
+    height: 1024px;
+    left: 148px;
+    top: 0px;
+    list-style: none;
+    background-color: #000;
+}
+
+.nav-list.is-active .nav-link {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 73px;
+    color: #fff;
 }
 
 .nav-item {
@@ -118,6 +142,7 @@ body {
     margin-right: 24px;
     display: none;
     justify-content: space-around;
+    cursor: pointer;
 }
 .hamburger-lines .line {
     display: block;
@@ -125,6 +150,29 @@ body {
     width: 50px;
     height: 3px;
     background-color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger.is-active .line:nth-child(2){
+    opacity: 0;
+}
+
+#hamburger.is-active .line:nth-child(1){
+    -webkit-transform: translateY(12px) rotate(45deg);
+    -ms-transform: translateY(12px) rotate(45deg);
+    -o-transform: translateY(12px) rotate(45deg);
+    transform: translateY(12px) rotate(45deg);
+    background-color: #bdae82;
+}
+  
+#hamburger.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-12px) rotate(-45deg);
+    -ms-transform: translateY(-12px) rotate(-45deg);
+    -o-transform: translateY(-12px) rotate(-45deg);
+    transform: translateY(-12px) rotate(-45deg);
+    background-color: #bdae82;
 }
 
 
@@ -267,7 +315,7 @@ h1 {
 }
 
 .skill-item p {
-    padding: 20px 20px 8px 20px;
+    padding-top: 20px;
     margin: 0;
     font-family: Inter;
     font-style: normal;
@@ -627,9 +675,37 @@ h1 {
     fill: #bdae82;
 }
 
+@media (max-width: 1440px) {
+    .container {
+        max-width: calc(100% - 40px);
+    }
+
+    .skills-item {
+      justify-content: space-evenly;;
+    }
+
+    .skill-item {
+        padding-bottom: 20px;
+    }
+    
+    .portfolio-items {
+        flex-direction: row;
+        height: auto;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 1024px) {
+    .portfolio-items {
+       flex-direction: column;
+       height: auto;
+       align-content: center;
+   }
+}
 
 @media (max-width: 769px) {
-    .nav {
+    .nav-list {
         display: none;
     }
 
@@ -683,8 +759,33 @@ h1 {
         background-size: auto 620px;
     }
 
+    .skills-item {
+        padding-top: 65px;
+        justify-content: space-evenly;
+    }
+
+    .skill-item {
+        padding-bottom: 68px;
+        width: 300px;
+    }
+
+    .skill-item h3 {
+        padding-top: 80px;
+    }
+
+    .skill-item p {
+        padding-top: 20px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+    }
+    
     .section-tittle-box {
         padding-top: 80px;
+        background-image: linear-gradient(to top, #000 18px, #bdae82 20px, #bdae82 20px, #000 18px);
     }
 
     .price-section {
@@ -699,33 +800,18 @@ h1 {
         justify-content: space-between;
         align-items: center;
     }
-}
 
-@media (max-width: 1024px) {
-     .portfolio-items {
-        flex-direction: column;
-        height: auto;
-        align-content: center;
-    }
-}
-
-@media (max-width: 1440px) {
-    .container {
-        max-width: calc(100% - 40px);
-    }
-
-    .skills-item {
-      justify-content: space-around;
-    }
-
-    .skill-item {
-        padding-bottom: 20px;
-    }
-    
-    .portfolio-items {
-        flex-direction: row;
-        height: auto;
-        align-content: center;
-        justify-content: space-evenly;
+    .section-title {
+        margin: 0 auto;
+        padding: 0 20px;
+        width: fit-content;
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        color: #BDAE82;
+        background-color: #000;
     }
 }
