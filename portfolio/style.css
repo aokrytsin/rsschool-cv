@@ -836,15 +836,19 @@ h1 {
     }
 
     .portfolio-btn-section {
-        padding-top: 70px;
+        padding-top: 50px;
     }
 
     .price-section {
         height: fit-content;
     }
 
+    .price-box-item {
+        width: 420px;
+    }
+
     .price-box-list {
-        padding: 60px 0 80px 0;
+        padding: 50px 0 80px 0;
         display: flex;
         gap: 50px;
         flex-direction: column;
@@ -885,10 +889,10 @@ h1 {
         display: flex;
         justify-content: center;
         max-width: 1440px;
-        height: 700px;
+        height: 600px;
         margin: 0 auto;
         background: url(./assets/img/contacts.jpg);
-        background-size: auto 700px;
+        background-size: auto 600px;
         background-position: center center;
     }
 
@@ -902,6 +906,13 @@ h1 {
 
     .contacts-title {
         align-self: center;
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 64px;
+        text-align: center;
+        color: #bdae82;
     }
 
     .contacts-button {
