@@ -6,3 +6,13 @@ function toggleMenu() {
   nav.classList.toggle('is-active');
 }
 hamburger.addEventListener('click', toggleMenu);
+
+const navLinks = document.querySelectorAll('.nav-link');
+
+nav.addEventListener('click', closeMenu);
+
+function closeMenu(event) {
+    if (event.target.classList.contains('nav-link')) {
+        nav.classList.remove('is-active');
+    }
+}
