@@ -1,9 +1,8 @@
-console.log(`
-Отметка - 106 балла(ов)
-Отзыв по пунктам ТЗ:
-Не выполненные/не засчитанные пункты:
-1) при уменьшении масштаба страницы браузера вёрстка размещается по центру, а не сдвигается в сторону
-Частично выполненные пункты:
-1) Вёрстка семантическая +20
-Выполненно частично — 18 балл(а)
-`);
+const hamburger = document.querySelector('.hamburger-lines');
+const nav = document.querySelector('.nav-list');
+
+function toggleMenu() {
+  hamburger.classList.toggle('is-active');
+  nav.classList.toggle('is-active');
+}
+hamburger.addEventListener('click', toggleMenu);
