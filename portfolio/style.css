@@ -661,7 +661,7 @@ h1 {
     color: #FFFFFF;
 }
 
-.footer-left-column p {
+.footer-left-column span {
     padding-right: 20px;
 }
 
@@ -892,4 +892,31 @@ h1 {
     .contacts-button {
         align-self: center;
     }
+
+    .footer-container .container {
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 620px) {
+    .nav-list-burger.is-active {
+        width: 100%;
+    }
+}
+
+@media (max-width: 485px) {
+    .portfolio-btn-section {
+        padding-top: 60px;
+        display: flex;
+        margin: 0px auto;
+        gap: 5px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
 }
