@@ -26,6 +26,7 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 
@@ -210,16 +211,15 @@ body {
     display: flex;
     justify-content: flex-start;
     max-width: 1440px;
-    height: 820px;
+    height: 910px;
     margin: 0 auto;
     background-image: url('./assets/img/bg.jpg');
-    background-position: center -90px;
-    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-box {
     height: 330px;
-    width: 55%;
+    width: 40%;
     margin-top: 250px;
     margin-left: 80px;
 }
@@ -706,14 +706,15 @@ h1 {
 @media (max-width: 1440px) {
     .container {
         max-width: calc(100% - 40px);
+        padding: 0;
     }
 
     .skills-item {
-      justify-content: space-evenly;;
+        justify-content: space-around;
     }
 
-    .skill-item {
-        padding-bottom: 20px;
+    .skill-item p {
+        padding-bottom: 10px;
     }
     
     .portfolio-items {
