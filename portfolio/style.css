@@ -959,4 +959,8 @@ h1 {
         width: 100%;
         height: 445px;
     }
+
+    .nav-list-burger.is-active {
+        padding: 108px 0 0 115px;
+    }
 }
