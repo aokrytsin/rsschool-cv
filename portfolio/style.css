@@ -58,23 +58,44 @@ body {
     list-style: none;
 }
 
-.nav-list.is-active {
+.nav-list-burger {
     margin: 0;
     padding: 134px 0 0 127px;
     position: absolute;
+    z-index: 1;
+    display: none;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 620px;
+    height: 1024px;
+    right: -620px;
+    top: 0px;
+    list-style: none;
+    background-color: #000;
+    transition: 0.5s
+}
+
+.nav-list-burger.is-active {
+    margin: 0;
+    padding: 134px 0 0 127px;
+    position: absolute;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     width: 620px;
     height: 1024px;
-    left: 148px;
+    right: 0px;
     top: 0px;
     list-style: none;
     background-color: #000;
+    transition: 0.5s
 }
 
-.nav-list.is-active .nav-link {
+.nav-list-burger.is-active .nav-link {
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -99,7 +120,11 @@ body {
 }
 
 .nav-link:hover {
-    color: #BDAE82;
+    color: #bdae82;
+}
+
+.nav-list-burger.is-active .nav-link:hover {
+    color: #bdae82;
 }
 
 .switch-lang-list {
@@ -139,6 +164,8 @@ body {
     color: #fff;
 }
 .hamburger-box {
+    position: relative;
+    z-index: 3;
     margin-right: 24px;
     display: none;
     justify-content: space-around;
@@ -164,7 +191,6 @@ body {
     -ms-transform: translateY(12px) rotate(45deg);
     -o-transform: translateY(12px) rotate(45deg);
     transform: translateY(12px) rotate(45deg);
-    background-color: #bdae82;
 }
   
 #hamburger.is-active .line:nth-child(3){
@@ -172,9 +198,11 @@ body {
     -ms-transform: translateY(-12px) rotate(-45deg);
     -o-transform: translateY(-12px) rotate(-45deg);
     transform: translateY(-12px) rotate(-45deg);
-    background-color: #bdae82;
 }
 
+#hamburger.is-active:hover .line {
+        background-color: #bdae82;
+}
 
 .hero-container {
     position: relative;
@@ -714,6 +742,10 @@ h1 {
     }
 
     .hamburger-box {
+        display: flex;
+    }
+
+    .nav-list-burger {
         display: flex;
     }
 
