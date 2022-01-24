@@ -17,3 +17,11 @@ function closeMenu(event) {
         nav.classList.remove('is-active');
     }
 }
+
+console.log(`
+Ваша отметка - 78 балла(ов)
+
+Частично выполненные пункты:
+1) секция video — 2 балл(а)
+2) секция price — 3 балл(а)
+`)
