@@ -34,6 +34,7 @@ body {
     display: flex;
     align-items: center;
     height: 90px;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -219,7 +220,7 @@ body {
 
 .hero-box {
     height: 330px;
-    width: 40%;
+    width: 35%;
     margin-top: 250px;
     margin-left: 80px;
 }
@@ -749,6 +750,10 @@ h1 {
         display: none;
     }
 
+    .header-bar {
+        padding: 0 20px;
+    }
+
     .logo {
         margin-left: 20px;
     }
@@ -787,8 +792,7 @@ h1 {
     }
     
     .hero-text {
-        margin-top: 10px;
-        padding-bottom: 5px;
+        margin: 20px 0 55px 0;
         font-family: Inter;
         font-style: normal;
         font-weight: normal;
@@ -845,6 +849,17 @@ h1 {
         align-items: center;
     }
 
+    .video-player {
+        width: 100vw;
+        height: auto;
+    }
+
+    .video-player-btn {
+        position: absolute;
+        height: 65px;
+        transition: 0.5s;
+    }
+
     .section-title {
         margin: 0 auto;
         padding: 0 20px;
@@ -857,5 +872,24 @@ h1 {
         text-align: center;
         color: #BDAE82;
         background-color: #000;
+    }
+
+    .contacts-section {
+        display: flex;
+        justify-content: center;
+        max-width: 1440px;
+        height: 700px;
+        margin: 0 auto;
+        background: url(./assets/img/contacts.jpg);
+        background-size: auto 700px;
+        background-position: center center;
+    }
+
+    .contacts-title {
+        align-self: center;
+    }
+
+    .contacts-button {
+        align-self: center;
     }
 }
