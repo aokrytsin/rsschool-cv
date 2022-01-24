@@ -13,6 +13,7 @@ nav.addEventListener('click', closeMenu);
 
 function closeMenu(event) {
     if (event.target.classList.contains('nav-link')) {
+        hamburger.classList.remove('is-active');
         nav.classList.remove('is-active');
     }
 }
