@@ -731,6 +731,17 @@ h1 {
        height: auto;
        align-content: center;
    }
+
+   .portfolio-btn-section {
+    padding-top: 60px;
+    display: flex;
+    margin: 0 auto;
+    gap: 5px;
+    width: 445px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 769px) {
