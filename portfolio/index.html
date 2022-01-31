@@ -31,6 +31,9 @@
                         <li class="switch-lang-item">ru</li>
                     </ul>
                 </div>
+                <div class="theme-switcher">
+
+                </div>
                 <div class="hamburger-box">
                     <span class="hamburger-lines" id="hamburger">
                             <span class="line"></span>
@@ -38,16 +41,16 @@
                             <span class="line"></span>
                     </span>
                 </div>
+                <div class="nav-list-burger">
+                    <ul class="nav-list-hb">
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#video" class="nav-link">Video</a></li>
+                        <li class="nav-item"><a href="#price" class="nav-link">Price</a></li>
+                        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="nav-list-burger">
-            <ul class="nav-list-hb">
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li class="nav-item"><a href="#video" class="nav-link">Video</a></li>
-                <li class="nav-item"><a href="#price" class="nav-link">Price</a></li>
-                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-            </ul>
         </div>
     </header>
     <main class="main-container">
@@ -85,12 +88,12 @@
                 </section>
                 <section class="portfolio-section" id="portfolio">
                     <div class="section-tittle-box"><h2 class="section-title">Portfolio</h2></div>
-                    <form class="portfolio-btn-section">
-                        <button class="portfolio-btn">Winter</button>
-                        <button class="portfolio-btn">Spring</button>
-                        <button class="portfolio-btn">Summer</button>
-                        <button class="portfolio-btn">Autumn</button>
-                    </form>
+                    <div class="portfolio-btn-section">
+                        <button class="portfolio-btn" data-season="winter">Winter</button>
+                        <button class="portfolio-btn" data-season="spring">Spring</button>
+                        <button class="portfolio-btn" data-season="summer">Summer</button>
+                        <button class="portfolio-btn" data-season="autumn">Autumn</button>
+                    </div>
                     <div class="portfolio-items">
                         <img src="./assets/img/1.jpg" alt="1photo" class="portfolio-img"/>
                         <img src="./assets/img/2.jpg" alt="2photo" class="portfolio-img"/>

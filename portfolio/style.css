@@ -19,8 +19,8 @@ body {
     background-repeat: no-repeat;
     background-position: center 0;*/
     position: absolute;
-    width: 100%;
     z-index: 2;
+    width: 100%;
 }
 
 .container {
@@ -49,9 +49,6 @@ body {
     contrast(87%);
 }
 
-.nav {
-}
-
 .nav-list {
     display: flex;
     justify-content: flex-end;
@@ -64,9 +61,8 @@ body {
     margin: 0;
     padding: 134px 0 0 127px;
     position: absolute;
-    z-index: 1;
-    display: none;
-    overflow-x: hidden;
+    z-index: 3;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -76,25 +72,12 @@ body {
     top: 0px;
     list-style: none;
     background-color: #000;
-    transition: 0.5s
+    transition: 0.5s;
 }
 
 .nav-list-burger.is-active {
-    margin: 0;
-    padding: 134px 0 0 127px;
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 620px;
-    height: 1024px;
     right: 0px;
-    top: 0px;
-    list-style: none;
-    background-color: #000;
-    transition: 0.5s
+    transition: 0.5s;
 }
 
 .nav-list-burger.is-active .nav-link {
@@ -167,7 +150,7 @@ body {
 }
 .hamburger-box {
     position: relative;
-    z-index: 3;
+    z-index: 4;
     margin-right: 24px;
     display: none;
     justify-content: space-around;
@@ -205,6 +188,7 @@ body {
 #hamburger.is-active:hover .line {
         background-color: #bdae82;
 }
+
 
 .hero-container {
     position: relative;
@@ -744,6 +728,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
 }
+}
 
 @media (max-width: 769px) {
     .nav-list {
@@ -759,10 +744,6 @@ h1 {
     }
 
     .hamburger-box {
-        display: flex;
-    }
-
-    .nav-list-burger {
         display: flex;
     }
 
