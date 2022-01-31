@@ -352,7 +352,7 @@ h1 {
 }
 
 .portfolio-btn {
-    border: 2px solid #BDAE82;
+    border: 2px solid #bdae82;
     width: 220px;
     height: 55px;
     font-family: Inter;
@@ -368,8 +368,13 @@ h1 {
 }
 
 .portfolio-btn:hover {
-    background-color: #BDAE82;
+    background-color: #bdae82;
     color: #fff;
+}
+
+.portfolio-btn.active {
+    color: #fff;
+    background-color: #bdae82;
 }
 
 .portfolio-items {
