@@ -1,3 +1,4 @@
+//================================= ! Hamburger
 const hamburger = document.querySelector('.hamburger-lines');
 const nav = document.querySelector('.nav-list-burger');
 
@@ -17,11 +18,22 @@ function closeMenu(event) {
         nav.classList.remove('is-active');
     }
 }
+//================================= ! Portfolio 
+const portfolioImages = document.querySelectorAll('.portfolio-img');
+const portfolioBtns = document.querySelector('.portfolio-btn-section');
 
-console.log(`
-Ваша отметка - 78 балла(ов)
+function changeImage(event) {
+  if(event.target.classList.contains('portfolio-btn')) {
+    if (event.target.dataset.season == "winter") {
+      portfolioImages.forEach((img, index) => img.src = `./assets/img/winter/${index + 1}.jpg`);
+    } if (event.target.dataset.season == "spring") {
+      portfolioImages.forEach((img, index) => img.src = `./assets/img/spring/${index + 1}.jpg`);
+    } if (event.target.dataset.season == "summer") {
+      portfolioImages.forEach((img, index) => img.src = `./assets/img/summer/${index + 1}.jpg`);
+    } if (event.target.dataset.season == "autumn") {
+      portfolioImages.forEach((img, index) => img.src = `./assets/img/autumn/${index + 1}.jpg`);
+    }
+  }
+}
 
-Частично выполненные пункты:
-1) секция video — 2 балл(а)
-2) секция price — 3 балл(а)
-`)
+portfolioBtns.addEventListener('click', changeImage);
